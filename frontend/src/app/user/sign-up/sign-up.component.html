@@ -1,9 +1,12 @@
+<mat-card>
+  <mat-card-title>Sign In</mat-card-title>
 <form #signUpForm="ngForm">
     <input type="text" #fullname="ngModel" [(ngModel)]="userService.selectedUser.fullName" name="fullName" placeholder="Full Name">
     <input type="text" #email="ngModel" [(ngModel)]="userService.selectedUser.email" name="email" placeholder="Email">
     <input type="password" #password="ngModel" [(ngModel)]="userService.selectedUser.password" name="password" placeholder="Password">
     <input type="submit" value="Sign Up">
 </form>
+</mat-card>
 <!-- Success message -->
 <div class="success" *ngIf="showSuccessMessage">
     Saved successfully
